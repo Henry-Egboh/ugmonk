@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Titillium+Web:wght@300;400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    height: 100vh;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* consists of header, navbrs and showcase bold image */
+.main_header {
+    background-color: rgb(177, 113, 73);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    width: 100%;
+}
+/* company name and first navbar together  */
+.logo_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+/* top 2 navbars and header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+    gap: 5rem;
+    width: 100%;
+}
+/* company name ugmonk */
+.head {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.head a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* login and help navbar */
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 1rem 0.2rem;
+    font-size: 0.8rem;
+}
+
+.nav ul li a:hover {
+    color: #cdcdcd;
+}
+/* ===================================== */
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    color: #cdcdcd;
+}
+
+/* bold top showcase image div  */
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+/* text below image */
+.txt_below_img {
+    align-self: flex-end;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 2rem;
+}
+
+.txt_below_img .fa {
+    padding-left: 0.5rem;
+}
+
+.txt p:first-child {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.txt_below_img a {
+    text-decoration: none;
+    /* color: rgb(216, 204, 204); */
+    color: #fff;
+}
+
+.txt_below_img a:hover {
+    color: #cdcdcd;
+}
+/* underline p tag with link */
+.txt p:last-child {
+    border-bottom: 1px inset #cdc;
+}
+
+/* bold top showcase image */
+.show_img {
+    flex: 2;
+}
+/* bold image */
+.showcase_image {
+    width: 60%;
+}
+
+/* consists of nav and card items */
+.show_header {
+    margin: 0rem 4rem 2rem;
+}
+
+/* card items */
+.header1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+/* div containng card images */
+.sec:nth-of-type(1) {
+    background-color: rgb(234, 220, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+}
+
+.sec:nth-of-type(1):hover {
+    opacity: 0.9;
+}
+
+.sec:nth-of-type(1) a {
+    text-align: center;
+}
+/* card image itself */
+.sec img {
+    width: 50%;
+}
+/* a tags containing name and price */
+.sec a {
+    text-decoration: none;
+    color: rgb(26, 21, 21);
+}
+
+.sec a:hover {
+    color: #cdc;
+    opacity: 0.9;
+}
+
+#dim_color {
+    color: #cdcdcd;
+}
+
+/* =========================================== */
+/* mini nav bar */
+.show_nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.show_nav ul li {
+    display: inline-block;
+}
+
+.show_nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: rgb(199, 196, 196);
+    padding: 1rem;
+}
+
+.show_nav ul li a:hover {
+    color: #cdcdcd;
+}
+
+/* .show_nav ul li a:active {
+    color: #000;
+    border-bottom: 1px solid #cdcdcd;
+} */
+
+/* ===========================================================
+==============================Media Query */
+@media screen {
+    /* company name and first navbar together  */
+.logo_nav {
+    gap: 1rem;
+}
+/* top 2 navbars and header */
+.header {
+    padding: 1rem 4rem;
+    gap: 1rem;
+}
+/* top navbar */
+.navbar ul li a {
+    padding: 1rem 0.2rem;
+}
+
+.nav ul li a {
+    padding: 0.2rem;
+}
+}
+
+@media screen and (min-width: 552px) {
+.logo_nav {
+    gap: 3rem;
+}
+/* top 2 navbars and header */
+.header {
+    padding: 0rem 4rem;
+    gap: 5rem;
+}
+    /* login and help navbar */
+.nav ul li a {
+    padding: 1rem 0.2rem;
+}
+/* ===================================== */
+.navbar ul li a {
+    padding: 1rem;
+}
+}
