@@ -15,29 +15,33 @@ body {
 
 /* consists of header, navbrs and showcase bold image */
 .main_header {
-    background-color: rgb(177, 113, 73);
+    /* background-color: rgb(177, 113, 73); */
+    background: url("./img/IMG-20221220-WA0006.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
-    width: 100%;
+    padding: 0rem 4rem;
+    min-height: 40rem;
 }
-/* company name and first navbar together  */
-.logo_nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-}
+
 /* top 2 navbars and header */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 4rem;
-    gap: 5rem;
-    width: 100%;
 }
+
+/* company name and first navbar together  */
+.logo_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    padding: 1rem 0rem;
+}
+
 /* company name ugmonk */
 .head {
     font-size: 1rem;
@@ -61,16 +65,18 @@ body {
 
 .nav ul li a {
     text-decoration: none;
-    display: block;
     color: #fff;
-    padding: 1rem 0.2rem;
+    padding: 0rem 0.2rem;
     font-size: 0.8rem;
 }
 
 .nav ul li a:hover {
     color: #cdcdcd;
+    transform: translate(26);
+    transition: all 500ms ease-in-out;
 }
-/* ===================================== */
+/* ===================================== 
+===================men and women navbar =================*/
 .navbar ul {
     list-style: none;
 }
@@ -81,77 +87,67 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    display: block;
     color: #fff;
-    padding: 1rem;
+    padding: 0rem 1rem;
     font-size: 1rem;
 }
 
 .navbar ul li a:hover {
     color: #cdcdcd;
+    transform: translate(26);
+    transition: all 500ms ease-in-out;
 }
 
-/* bold top showcase image div  */
-.section {
+/* text beneath showcase image  */
+.showcase {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-    align-items: center;
-}
-/* text below image */
-.txt_below_img {
-    align-self: flex-end;
+    flex-direction: column;
     color: #fff;
-    flex: 1;
-    display: flex;
-    justify-content: end;
-    padding-bottom: 2rem;
+    margin-top: 35%;
 }
 
-.txt_below_img .fa {
+.showcase .fa {
     padding-left: 0.5rem;
-}
+} 
 
-.txt p:first-child {
+ .showcase p:first-child {
     font-weight: 400;
     font-size: 1.2rem;
-}
+} 
 
-.txt_below_img a {
+.showcase a {
     text-decoration: none;
-    /* color: rgb(216, 204, 204); */
     color: #fff;
 }
 
-.txt_below_img a:hover {
+.showcase a:hover {
     color: #cdcdcd;
+    transform: translate(26);
+    transition: all 1s ease-in-out;
 }
 /* underline p tag with link */
-.txt p:last-child {
+.showcase p:last-child {
     border-bottom: 1px inset #cdc;
+    width: 10%;
 }
 
-/* bold top showcase image */
-.show_img {
-    flex: 2;
-}
-/* bold image */
-.showcase_image {
-    width: 60%;
-}
+/* ===============================================================================
+================================================================================ */
 
 /* consists of nav and card items */
 .show_header {
-    margin: 0rem 4rem 2rem;
+    display: grid;
+    margin: 0rem 4rem;
 }
 
 /* card items */
-.header1 {
+.main_content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
     gap: 1rem;
 }
+
 /* div containng card images */
 .sec:nth-of-type(1) {
     background-color: rgb(234, 220, 205);
@@ -163,6 +159,8 @@ body {
 
 .sec:nth-of-type(1):hover {
     opacity: 0.9;
+    transform: translate(26);
+    transition: all 1000ms ease-in-out;
 }
 
 .sec:nth-of-type(1) a {
@@ -181,14 +179,19 @@ body {
 .sec a:hover {
     color: #cdc;
     opacity: 0.9;
+    transform: translate(26);
+    transition: all 1000ms ease-in-out;
 }
-
+/* product names in bracket */
 #dim_color {
     color: #cdcdcd;
 }
 
 /* =========================================== */
 /* mini nav bar */
+.show_nav {
+    padding: 1rem;
+}
 .show_nav ul {
     list-style: none;
     text-align: center;
@@ -200,57 +203,228 @@ body {
 
 .show_nav ul li a {
     text-decoration: none;
-    display: block;
     color: rgb(199, 196, 196);
-    padding: 1rem;
+    margin: 0rem 1rem;
 }
 
 .show_nav ul li a:hover {
-    color: #cdcdcd;
+    color: #011;
+    border-bottom: 1px solid #200c0c;
+    transform: translate(26);
+    transition: all 1000ms ease-in-out;
 }
 
-/* .show_nav ul li a:active {
+.show_nav ul li a:active {
     color: #000;
     border-bottom: 1px solid #cdcdcd;
-} */
+}
+
+
+/* ===================================================================
+================================FOOTER ==================================== */
+/* container */
+.footer {
+    background-color: #323232;
+    /* padding: 2rem 4rem; */
+    display: grid;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 2rem;
+}
+/* footer header */
+.footer h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0rem;
+}
+
+/* footer list items */
+.footer_list ul {
+    list-style: none;
+}
+
+.footer_list ul li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #fff;
+    color: #cdcdcd;
+}
+/* hover */
+.footer_list ul li a:hover {
+    color: #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+/* name and address */
+.base:nth-of-type(1) {
+    background-color: #2e2b2b;
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* dots on the company name */
+.circle {
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.circ {
+    width: 0.6rem;
+    border-radius: 50%;
+    height: 0.6rem;
+    background-color: rgb(227, 148, 44);
+}
+
+/* list items */
+.base:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    padding: 3rem 6rem;
+    justify-items: center;
+}
+
+/* social icons */
+.base:nth-of-type(3) {
+    padding: 0rem 6rem 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    border-top: rgb(62, 63, 62) ridge 1px;
+    /* background-color: #2e2b2b; */
+}
+
+/* social icons */
+.social .img {
+    width: 2rem;
+    padding-right: 1rem;
+}
+
+/* address section of footer */
+.location {
+    font-size: 0.7rem;
+    color: #cdc;
+    padding: 0.8rem 0rem;
+}
 
 /* ===========================================================
-==============================Media Query */
+==============================Media Query ==============================================*/
 @media screen {
-    /* company name and first navbar together  */
-.logo_nav {
-    gap: 1rem;
+.main_header {
+    padding: 0rem 3rem;
+    background: linear-gradient(rgba(0, 0 , 0, 0.2), rgba(0, 0 , 0, 0.2)), url("./img/IMG-20221220-WA0006.jpg");
+    background-position: center;
 }
-/* top 2 navbars and header */
+/*column navs */
 .header {
-    padding: 1rem 4rem;
-    gap: 1rem;
+    flex-direction: column-reverse;
 }
-/* top navbar */
+
 .navbar ul li a {
-    padding: 1rem 0.2rem;
+    padding: 0rem 0.2rem;
+    font-size: 0.8rem;
 }
 
-.nav ul li a {
-    padding: 0.2rem;
+/* company name ugmonk */
+.head {
+    font-size: 0.8rem;
+}
+/* showcase text */
+.showcase p:last-child {
+    width: 20%;
+}
+
+/* card items */
+.main_content {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* footer stacking */
+.base:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+}
+
+/* align the social icons */
+.base:nth-of-type(3) {
+    align-items: center;
 }
 }
 
-@media screen and (min-width: 552px) {
-.logo_nav {
-    gap: 3rem;
-}
-/* top 2 navbars and header */
-.header {
+@media screen and (min-width: 576px) {  
+.main_header {
     padding: 0rem 4rem;
-    gap: 5rem;
-}
-    /* login and help navbar */
-.nav ul li a {
-    padding: 1rem 0.2rem;
-}
-/* ===================================== */
+    background: url("./img/IMG-20221220-WA0006.jpg");
+} 
+
 .navbar ul li a {
-    padding: 1rem;
+    padding: 0rem 0.2rem;
+    font-size: 1rem;
+}
+
+/* company name ugmonk */
+.head {
+    font-size: 1rem;
+}
+
+/* card items */
+.main_content {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* footer stacking */
+.base:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media screen and (min-width: 768px) {
+/*column navs */
+.main_header {
+    background-position: initial;
+}
+
+.header {
+    flex-direction: row;
+}
+
+/* showcase text */
+.showcase p:last-child {
+    width: 10%;
+}
+
+.navbar ul li a {
+    padding: 0rem 0.5rem;
+}
+
+/* card items */
+.main_content {
+    grid-template-columns: repeat(4, 1fr);
+}
+/* footer stacking */
+.base:nth-of-type(2) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 0rem;
+}
+
+/* align the social icons */
+.base:nth-of-type(3) {
+    align-items: flex-end;
+}
+}
+
+@media screen and (min-width: 992px) {
+.navbar ul li a {
+        padding: 0rem 1rem;
+}
+
+.base:nth-of-type(2) {
+    column-gap: 0rem;
 }
 }
